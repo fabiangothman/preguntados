@@ -7,8 +7,6 @@ Built on a custom PHP Framework.
 
 Hi! this is a web game built with PHP about Questions and Answers with an interavtive roulette wheel who chooses random questions, the App captures data from the user and shows stadistics into an admin panel, hope you enjoy it!.
 
-[`FECODE`]: http://www.fecode.edu.co/
-
 ## Framework
 I've created an own PHP Framework to deploy this Application. All rights reserved.
 
