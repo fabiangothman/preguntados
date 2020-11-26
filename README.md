@@ -3,7 +3,9 @@
 [![Build Status](https://travis-ci.com/async-rs/async-std.svg?branch=master)](https://travis-ci.com/async-rs/async-std)
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](https://github.com/async-rs/async-std)
 
-Hi! this is an app created by myself it's a web game built with PHP about Questions and Answers with an interavtive roulette wheel who chooses random questions, the App captures data from the user and shows stadistics into an admin panel, hope you enjoy it!.
+Built on a custom PHP Framework.
+
+Hi! this is a web game built with PHP about Questions and Answers with an interavtive roulette wheel who chooses random questions, the App captures data from the user and shows stadistics into an admin panel, hope you enjoy it!.
 
 [`FECODE`]: http://www.fecode.edu.co/
 
