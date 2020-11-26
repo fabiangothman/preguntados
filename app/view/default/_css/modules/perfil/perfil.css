@@ -1,0 +1,440 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #perfil_container{
+        background-color:black;
+    }
+
+    #perfil_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #perfil_container .page_content .contenedor_area{
+        background-color:rgba(32, 129, 174, 0.9);
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #perfil_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #perfil_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #perfil_container .rank_cont{
+            margin:0px auto;
+            max-width:500px;
+            padding:5px 15px;
+        }
+            #perfil_container .rank_cont .titulo_cont, #perfil_container .rank_cont .info_cont{
+                /*border:2px solid green;*/
+            }
+            #perfil_container .rank_cont .titulo_cont{
+                margin-top:20px;
+            }
+                #perfil_container .rank_cont .titulo_cont .titulo{
+                    margin:0px auto;
+                    /*min-width:100px;*/
+                    width:80%;
+                }
+
+                    #perfil_container .rank_cont .titulo_cont .titulo .texto{
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+
+            #perfil_container .rank_cont .info_cont{
+                /*border:1px solid red;*/
+                margin-bottom:20px;
+                width:100%;
+            }
+                #perfil_container .rank_cont .info_cont .info{
+                    width:100%;
+                }
+
+                #perfil_container .rank_cont .info_cont .info .seccion{
+                    /*border:2px solid blue;*/
+                    margin:5px 0px;
+                }
+                #perfil_container .rank_cont .info_cont .info .seccion .cont_titl{
+                    background-color:rgba(73, 41, 87, 0.9);
+                    padding:2px 10px;
+                }
+                    #perfil_container .rank_cont .info_cont .info .seccion .cont_titl .textoCampo{
+                        align-items:center;
+                        color:white;
+                        display:flex;
+                        font-size:15px;
+                        justify-content:left;
+                        overflow:hidden;
+                    }
+
+                    #perfil_container .rank_cont .info_cont .info .seccion .foto_cont{
+                        margin:20px auto;
+                        min-width:100px;
+                        /*overflow:hidden;*/    /*para la sombra*/
+                        width:70%;
+                    }
+                        #perfil_container .rank_cont .info_cont .info .seccion .foto_cont .foto{
+                            margin:0px auto;
+                            max-width:100px;
+                            max-height:100px;
+                            overflow:hidden;
+                            width:100%;
+                            /* border-radius */
+                            -webkit-border-radius:50px;
+                            -moz-border-radius:50px;
+                            border-radius:50px;
+                            /* box-shadow */
+                            -webkit-box-shadow:rgba(255, 255, 255, 1) 0px 10px;
+                            -moz-box-shadow:rgba(255, 255, 255, 1) 0 0 10px;
+                            box-shadow:rgba(255, 255, 255, 1) 0 0 10px;
+                        }
+                    #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .codig_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .identi_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .nombr_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .apell_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .emai_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .grup_cont{
+                        background-color:rgba(77, 154, 190, 1);
+                        height:30px;
+                    }
+                        #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont .subefoto, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .codig_cont .codigo, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .identi_cont .identificacion, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .nombr_cont .nombres, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .apell_cont .apellidos, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .emai_cont .email, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .grup_cont .grupo{
+                            color:white;
+                            height:100%;
+                            width:100%;
+                        }
+                            #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont input[type="file"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .codig_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .identi_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .nombr_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .apell_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .emai_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .grup_cont input[type="text"],
+                            #perfil_container .rank_cont .info_cont .info .seccion .grup_cont select{
+                                background-color:transparent;
+                                border:0px;
+                                color:white;
+                                height:100%;
+                                padding:0px 10px;
+                                width:100%;
+                            }
+                                #perfil_container .rank_cont .info_cont .info .seccion .grup_cont select option{
+                                    color:black;
+                                }
+                            #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont input[type="file"]{
+                                padding-top:4px;
+                                padding-bottom:4px;
+                            }
+                            input[type="text"]::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                                color:rgba(255, 255, 255, 0.5);
+                            }
+                            input[type="text"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                               color:rgba(255, 255, 255, 0.5);
+                               opacity:1;
+                            }
+                            input[type="text"]::-moz-placeholder { /* Mozilla Firefox 19+ */
+                               color:rgba(255, 255, 255, 0.5);
+                               opacity:1;
+                            }
+                            input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                               color:rgba(255, 255, 255, 0.5);
+                            }
+                            input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
+                               color:rgba(255, 255, 255, 0.5);
+                            }
+                    #perfil_container .rank_cont .info_cont .info .seccion .btn_cont{   
+                        margin-top:25px;
+                    }
+                        #perfil_container .rank_cont .info_cont .info .seccion .btn_cont .btn_enviar{
+                            background-color:rgba(73, 41, 87, 0.9);
+                            /*background-color:rgba(59, 160, 164, 0.9);*/
+                            border-radius:5px;
+                            color:white;
+                            height:35px;
+                            margin:0px auto;
+                            max-width:150px;
+                            min-width:100px;
+                            width:50%;
+                        }
+                        #perfil_container .rank_cont .info_cont .info .seccion .btn_cont .btn_enviar:hover{
+                            background-color:rgba(73, 41, 87, 0.7);
+                        }
+                            #perfil_container .rank_cont .info_cont .info .seccion .btn_cont .btn_enviar input[type="submit"]{
+                                background-color:transparent;
+                                border:0px;
+                                font-size:15px;
+                                /*font-weight:bold;*/
+                                width:100%;
+                                height:100%;
+                            }
+                    
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+    #perfil_container{
+        background-color:black;
+    }
+
+    #perfil_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:700px;
+    }
+    
+
+    /************************/
+    /*  Inicia la edición   */
+    #perfil_container .page_content .contenedor_area{
+        background-color:rgba(32, 129, 174, 0.9);
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #perfil_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:none;*/
+        }
+
+        #perfil_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #perfil_container .rank_cont{
+            margin:0px auto;
+            max-width:500px;
+            padding:5px 15px;
+        }
+            #perfil_container .rank_cont .titulo_cont, #perfil_container .rank_cont .info_cont{
+                /*border:2px solid green;*/
+            }
+            #perfil_container .rank_cont .titulo_cont{
+                margin-top:20px;
+            }
+                #perfil_container .rank_cont .titulo_cont .titulo{
+                    margin:0px auto;
+                    /*min-width:100px;*/
+                    width:80%;
+                }
+
+                    #perfil_container .rank_cont .titulo_cont .titulo .texto{
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+
+            #perfil_container .rank_cont .info_cont{
+                /*border:1px solid red;*/
+                margin-bottom:20px;
+                width:100%;
+            }
+                #perfil_container .rank_cont .info_cont .info{
+                    width:100%;
+                }
+
+                #perfil_container .rank_cont .info_cont .info .seccion{
+                    /*border:2px solid blue;*/
+                    margin:5px 0px;
+                }
+                #perfil_container .rank_cont .info_cont .info .seccion .cont_titl{
+                    background-color:rgba(73, 41, 87, 0.9);
+                    padding:2px 10px;
+                }
+                    #perfil_container .rank_cont .info_cont .info .seccion .cont_titl .textoCampo{
+                        align-items:center;
+                        color:white;
+                        display:flex;
+                        font-size:15px;
+                        justify-content:left;
+                        overflow:hidden;
+                    }
+
+                    #perfil_container .rank_cont .info_cont .info .seccion .foto_cont{
+                        margin:20px auto;
+                        min-width:100px;
+                        /*overflow:hidden;*/    /*para la sombra*/
+                        width:70%;
+                    }
+                        #perfil_container .rank_cont .info_cont .info .seccion .foto_cont .foto{
+                            margin:0px auto;
+                            max-width:100px;
+                            max-height:100px;
+                            overflow:hidden;
+                            width:100%;
+                            /* border-radius */
+                            -webkit-border-radius:50px;
+                            -moz-border-radius:50px;
+                            border-radius:50px;
+                            /* box-shadow */
+                            -webkit-box-shadow:rgba(255, 255, 255, 1) 0px 10px;
+                            -moz-box-shadow:rgba(255, 255, 255, 1) 0 0 10px;
+                            box-shadow:rgba(255, 255, 255, 1) 0 0 10px;
+                        }
+                    #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .codig_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .identi_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .nombr_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .apell_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .emai_cont, 
+                    #perfil_container .rank_cont .info_cont .info .seccion .grup_cont{
+                        background-color:rgba(77, 154, 190, 1);
+                        height:30px;
+                    }
+                        #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont .subefoto, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .codig_cont .codigo, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .identi_cont .identificacion, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .nombr_cont .nombres, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .apell_cont .apellidos, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .emai_cont .email, 
+                        #perfil_container .rank_cont .info_cont .info .seccion .grup_cont .grupo{
+                            color:white;
+                            height:100%;
+                            width:100%;
+                        }
+                            #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont input[type="file"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .codig_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .identi_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .nombr_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .apell_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .emai_cont input[type="text"], 
+                            #perfil_container .rank_cont .info_cont .info .seccion .grup_cont input[type="text"],
+                            #perfil_container .rank_cont .info_cont .info .seccion .grup_cont select{
+                                background-color:transparent;
+                                border:0px;
+                                color:white;
+                                height:100%;
+                                padding:0px 10px;
+                                width:100%;
+                            }
+                                #perfil_container .rank_cont .info_cont .info .seccion .grup_cont select option{
+                                    color:black;
+                                }
+                            #perfil_container .rank_cont .info_cont .info .seccion .subefoto_cont input[type="file"]{
+                                padding-top:4px;
+                                padding-bottom:4px;
+                            }
+                            input[type="text"]::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                                color:rgba(255, 255, 255, 0.5);
+                            }
+                            input[type="text"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                               color:rgba(255, 255, 255, 0.5);
+                               opacity:1;
+                            }
+                            input[type="text"]::-moz-placeholder { /* Mozilla Firefox 19+ */
+                               color:rgba(255, 255, 255, 0.5);
+                               opacity:1;
+                            }
+                            input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                               color:rgba(255, 255, 255, 0.5);
+                            }
+                            input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
+                               color:rgba(255, 255, 255, 0.5);
+                            }
+                    #perfil_container .rank_cont .info_cont .info .seccion .btn_cont{   
+                        margin-top:25px;
+                    }
+                        #perfil_container .rank_cont .info_cont .info .seccion .btn_cont .btn_enviar{
+                            background-color:rgba(73, 41, 87, 0.9);
+                            /*background-color:rgba(59, 160, 164, 0.9);*/
+                            border-radius:5px;
+                            color:white;
+                            height:35px;
+                            margin:0px auto;
+                            max-width:150px;
+                            min-width:100px;
+                            width:50%;
+                        }
+                        #perfil_container .rank_cont .info_cont .info .seccion .btn_cont .btn_enviar:hover{
+                            background-color:rgba(73, 41, 87, 0.7);
+                        }
+                            #perfil_container .rank_cont .info_cont .info .seccion .btn_cont .btn_enviar input[type="submit"]{
+                                background-color:transparent;
+                                border:0px;
+                                font-size:15px;
+                                /*font-weight:bold;*/
+                                width:100%;
+                                height:100%;
+                            }
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}
+
+.divisorInfo{
+    margin:3px 0px;
+    border:0;
+    border-top: 1px solid #bbb;
+}
+
+.disabled{
+    background-color:rgba(200, 200, 200, 0.4) !important;
+}

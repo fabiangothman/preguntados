@@ -1,0 +1,446 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #historial_container{
+        background-color:black;
+    }
+
+    #historial_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #historial_container .page_content .contenedor_area{
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #historial_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #historial_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #historial_container .rank_cont{
+            margin:0px auto;
+            max-width:500px;
+            padding:5px 15px;
+        }
+            #historial_container .rank_cont .titulo_cont, #historial_container .rank_cont .tabla_cont{
+                /*border:2px solid green;*/
+            }
+            #historial_container .rank_cont .titulo_cont{
+                margin-top:20px;
+                margin-bottom:30px;
+            }
+                #historial_container .rank_cont .titulo_cont .titulo{
+                    margin:0px auto;
+                    /*min-width:100px;*/
+                    width:80%;
+                }
+
+                    #historial_container .rank_cont .titulo_cont .titulo .texto{
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+
+            #historial_container .rank_cont .tabla_cont{
+                margin-bottom:20px;
+                width:100%;
+            }
+                #historial_container .rank_cont .tabla_cont .tabla{
+                    display:flex;
+                    width:100%;
+                }
+                    #historial_container .rank_cont .tabla_cont .tabla .column.left_col{
+                        width:100%;
+                    }
+                    #historial_container .rank_cont .tabla_cont .tabla .column{
+                        /*border:1px solid green;*/
+                        display:inline-block;
+                    }
+
+                        #historial_container .rank_cont .tabla_cont .tabla .column .cont_col.cont_left{
+                            /**/
+                        }                  
+                        #historial_container .rank_cont .tabla_cont .tabla .column .cont_col{
+                            /**/
+                        }
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_curso, #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_fin, #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                /*min-width:70px;*/
+                                overflow:hidden;
+                                width:100%;
+                            }
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_curso{
+                                background-color:#73bf43;
+                            }
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_fin{
+                                margin-top:20px;
+                                background-color:#c60019;
+                            }
+                                #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .titl_area, #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                    margin:0px 5px;
+                                }
+                                #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .titl_area{
+                                    /**/
+                                }
+                                    #historial_container .rank_cont .tabla_cont .tabla .left_col .cont_col .titl_area{
+                                        margin-left:10px;
+                                    }
+                                    #historial_container .rank_cont .tabla_cont .tabla .left_col .cont_col .titl_area .texto{
+                                        /**/
+                                    }
+                                    #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .titl_area .texto{
+                                        color:white;
+                                        font-size:15px;
+                                        font-weight:bold;
+                                        margin:5px 0px;
+                                        overflow:hidden;
+                                    }
+                                #historial_container .rank_cont .tabla_cont .tabla .column.left_col .cont_col .titl_area{
+                                    text-align:left;
+                                }
+
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                background-color:white;
+                            }
+                                #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                }
+
+                                    #historial_container .rank_cont .tabla .column .tbl_list_cont .list_area .cont_info{
+                                        /**/
+                                    }
+                                        #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador{
+                                            /*border:1px solid blue;*/
+                                            display:flex;
+                                            height:70px;
+                                            margin:5px 0px;
+                                        }
+                                        #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador.link_continuar{
+                                            cursor:pointer;
+                                        }
+                                        #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador.link_continuar:hover{
+                                            background-color:rgba(100, 100, 100, 0.2);
+                                        }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_marcador, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                align-items:center;
+                                                /*border:1px solid red;*/
+                                                color:black;
+                                                display:flex;
+                                                justify-content:center;
+                                                height:100%;
+                                                margin:0px 3px;
+                                                overflow:hidden;
+                                            }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_marcador{
+                                                width:15%;
+                                            }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_marcador .marcador{
+                                                    /**/
+                                                }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto{
+                                                width:20%;
+                                            }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto .foto{
+                                                    border-radius:25px;
+                                                    max-width:50px;
+                                                    max-height:50px;
+                                                    overflow:hidden;
+                                                    width:100%;
+                                                }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                width:65%;
+                                            }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user{
+                                                    width:100%;
+                                                }
+                                                    #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .nombres, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .ronda, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .iniciado, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .finalizado{
+                                                        overflow:hidden;
+                                                        text-overflow:ellipsis;
+                                                        white-space:nowrap;
+                                                    }
+                                                    #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .iniciado, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .finalizado{
+                                                        color:grey;
+                                                    }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .nombres{
+                                                    color:black;
+                                                    font-size:14px;
+                                                    font-weight:bold;
+                                                }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont.activas .info_jugador .cont_user_data .cont_user .ronda{
+                                                    color:#73bf43;
+                                                    font-size:13px;
+                                                }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont.finalizadas .info_jugador .cont_user_data .cont_user .ronda{
+                                                    color:#c60019;
+                                                    font-size:13px;
+                                                }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .iniciado, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .finalizado{
+                                                    color:grey;
+                                                    font-size:12px;
+                                                }
+
+                    
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+    #historial_container{
+        background-color:black;
+    }
+
+    #historial_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:700px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #historial_container .page_content .contenedor_area{
+        margin:0px auto;
+        width:100%;
+    }
+
+        #historial_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:none;*/
+        }
+
+        #historial_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:block;*/
+            height:auto;
+        }
+
+
+        #historial_container .rank_cont{
+            margin:0px auto;
+            max-width:500px;
+            padding:5px 15px;
+        }
+            #historial_container .rank_cont .titulo_cont, #historial_container .rank_cont .tabla_cont{
+                /*border:2px solid green;*/
+            }
+            #historial_container .rank_cont .titulo_cont{
+                margin-top:20px;
+                margin-bottom:30px;
+            }
+                #historial_container .rank_cont .titulo_cont .titulo{
+                    margin:0px auto;
+                    /*min-width:100px;*/
+                    width:80%;
+                }
+
+                    #historial_container .rank_cont .titulo_cont .titulo .texto{
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+
+            #historial_container .rank_cont .tabla_cont{
+                margin-bottom:20px;
+                width:100%;
+            }
+                #historial_container .rank_cont .tabla_cont .tabla{
+                    display:flex;
+                    width:100%;
+                }
+                    #historial_container .rank_cont .tabla_cont .tabla .column.left_col{
+                        width:100%;
+                    }
+                    #historial_container .rank_cont .tabla_cont .tabla .column{
+                        /*border:1px solid green;*/
+                        display:inline-block;
+                    }
+
+                        #historial_container .rank_cont .tabla_cont .tabla .column .cont_col.cont_left{
+                            /**/
+                        }                  
+                        #historial_container .rank_cont .tabla_cont .tabla .column .cont_col{
+                            /**/
+                        }
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_curso, #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_fin, #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                /*min-width:70px;*/
+                                overflow:hidden;
+                                width:100%;
+                            }
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_curso{
+                                background-color:#73bf43;
+                            }
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont_fin{
+                                margin-top:20px;
+                                background-color:#c60019;
+                            }
+                                #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .titl_area, #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                    margin:0px 5px;
+                                }
+                                #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .titl_area{
+                                    /**/
+                                }
+                                    #historial_container .rank_cont .tabla_cont .tabla .left_col .cont_col .titl_area{
+                                        margin-left:10px;
+                                    }
+                                    #historial_container .rank_cont .tabla_cont .tabla .left_col .cont_col .titl_area .texto{
+                                        /**/
+                                    }
+                                    #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .titl_area .texto{
+                                        color:white;
+                                        font-size:15px;
+                                        font-weight:bold;
+                                        margin:5px 0px;
+                                        overflow:hidden;
+                                    }
+                                #historial_container .rank_cont .tabla_cont .tabla .column.left_col .cont_col .titl_area{
+                                    text-align:left;
+                                }
+
+                            #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                background-color:white;
+                            }
+                                #historial_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                }
+
+                                    #historial_container .rank_cont .tabla .column .tbl_list_cont .list_area .cont_info{
+                                        /**/
+                                    }
+                                        #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador{
+                                            /*border:1px solid blue;*/
+                                            display:flex;
+                                            height:70px;
+                                            margin:5px 0px;
+                                        }
+                                        #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador.link_continuar{
+                                            cursor:pointer;
+                                        }
+                                        #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador.link_continuar:hover{
+                                            background-color:rgba(100, 100, 100, 0.2);
+                                        }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_marcador, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                align-items:center;
+                                                /*border:1px solid red;*/
+                                                color:black;
+                                                display:flex;
+                                                justify-content:center;
+                                                height:100%;
+                                                margin:0px 3px;
+                                                overflow:hidden;
+                                            }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_marcador{
+                                                width:15%;
+                                            }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_marcador .marcador{
+                                                    /**/
+                                                }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto{
+                                                width:20%;
+                                            }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto .foto{
+                                                    border-radius:25px;
+                                                    max-width:50px;
+                                                    max-height:50px;
+                                                    overflow:hidden;
+                                                    width:100%;
+                                                }
+                                            #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                width:65%;
+                                            }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user{
+                                                    width:100%;
+                                                }
+                                                    #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .nombres, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .ronda, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .iniciado, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .finalizado{
+                                                        overflow:hidden;
+                                                        text-overflow:ellipsis;
+                                                        white-space:nowrap;
+                                                    }
+                                                    #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .iniciado, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .finalizado{
+                                                        color:grey;
+                                                    }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .nombres{
+                                                    color:black;
+                                                    font-size:14px;
+                                                    font-weight:bold;
+                                                }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont.activas .info_jugador .cont_user_data .cont_user .ronda{
+                                                    color:#73bf43;
+                                                    font-size:13px;
+                                                }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont.finalizadas .info_jugador .cont_user_data .cont_user .ronda{
+                                                    color:#c60019;
+                                                    font-size:13px;
+                                                }
+                                                #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .iniciado, #historial_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .finalizado{
+                                                    color:grey;
+                                                    font-size:12px;
+                                                }
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}
+
+.divisorInfo{
+    margin:3px 0px;
+    border:0;
+    border-top: 1px solid #bbb;
+}

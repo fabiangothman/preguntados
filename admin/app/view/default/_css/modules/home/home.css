@@ -1,0 +1,115 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+.btn_preguntas{
+    background-color: #337ab7;
+    width: 150px;
+    height: 150px;
+    display: table-cell;
+    border-radius: 15px;
+}
+
+.btn_preguntas:hover{
+    background-color: #336795;
+}
+
+.btn_usuarios{
+    background-color: #337ab7;
+    width: 150px;
+    height: 150px;   
+    display: table-cell;
+    border-radius: 15px;
+}
+
+.btn_usuarios:hover{
+    background-color: #336795;
+}
+
+
+.home_buttons{
+    display: table;
+    text-align: center;
+}
+
+.home_img{
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.text_image{
+    color: #fff;
+}
+
+/************************************/
+/*	Tamaño para versión en móviles	*/
+@media screen and (min-width:0px) and (max-width:599px) {
+    #home_container{
+    	/**/
+    }
+
+    #home_container .page_content{
+    	margin:0px auto;
+    	max-width:1000px;
+    }
+
+
+    /************************/
+    /*	Inicia la edición	*/
+
+}
+
+
+/****************************************/
+/*	Tamaño para versión en escritorio	*/
+@media screen and (min-width:600px){
+    #home_container{
+    	/**/
+    }
+
+    #home_container .page_content{
+    	margin:0px auto;
+    	max-width:1000px;
+    }
+
+
+    /************************/
+    /*	Inicia la edición	*/
+
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.h2{
+	display:block;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+.h1{
+	cursor:pointer;
+	display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+}

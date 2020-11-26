@@ -1,0 +1,147 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #instrucciones_container{
+        background-color:black;
+    }
+
+    #instrucciones_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #instrucciones_container .page_content .contenedor_area{
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #instrucciones_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #instrucciones_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #instrucciones_container .intru_cont{
+            /*border:1px solid red;*/
+            width:100%;
+        }
+
+        #instrucciones_container .intru_cont #iframe_instructivo{
+            padding:0px;
+            height:100%;
+            width:100%;
+            -webkit-box-shadow:3px 3px 5px 6px #2b2929;
+            -moz-box-shadow:3px 3px 5px 6px #2b2929;
+            box-shadow:0px 6px 99px 29px #2b2929;
+        }
+
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+
+    #instrucciones_container{
+        background-color:black;
+    }
+
+    #instrucciones_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:700px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #instrucciones_container .page_content .contenedor_area{
+        margin:0px auto;
+        width:100%;
+    }
+
+        #instrucciones_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #instrucciones_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #instrucciones_container .intru_cont{
+            /*border:1px solid red;*/
+            width:100%;
+        }
+
+        #instrucciones_container .intru_cont #iframe_instructivo{
+            padding:0px;
+            height:100%;
+            width:100%;
+            -webkit-box-shadow:3px 3px 5px 6px #2b2929;
+            -moz-box-shadow:3px 3px 5px 6px #2b2929;
+            box-shadow:0px 6px 99px 29px #2b2929;
+        }
+
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}
+
+.divisorInfo{
+    margin:3px 0px;
+    border:0;
+    border-top: 1px solid #bbb;
+}

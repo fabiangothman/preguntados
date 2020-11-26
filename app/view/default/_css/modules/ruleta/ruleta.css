@@ -1,0 +1,531 @@
+<?php
+    /****************************************************************************
+    *   Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com            *
+    *                     Juan Suárez, juancsuarezg@correo.udistrital.edu.co    *
+    *                     © 2017                                                *
+    ****************************************************************************/
+body{
+    margin:0px;
+    padding:0px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:16px;
+}
+@-ms-viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #ruleta_container{
+        background-color:black;
+    }
+
+    #ruleta_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #ruleta_container .page_content .contenedor_area{
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #ruleta_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #ruleta_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #ruleta_container .areaNavegacionResponsive .concursantes{
+            width:100%;
+        }
+
+            #ruleta_container .areaNavegacionResponsive .cont_rivales{
+                /*align-items:center;*/
+                /*border:1px solid red;*/
+                color:white;
+                display:flex;
+                justify-content:center;
+                padding:0px 5px;
+                width:100%;
+            }
+
+            #ruleta_container .areaNavegacionResponsive .cont_rivales #usu_local, #ruleta_container .areaNavegacionResponsive .cont_rivales #usu_visitante, #ruleta_container .areaNavegacionResponsive .cont_rivales #vs{
+                /*border:1px solid red;*/
+                display:inline-table;
+                margin:5px 0px 10px 0px;
+            }
+
+            #ruleta_container .areaNavegacionResponsive .cont_rivales #usu_local, #ruleta_container .areaNavegacionResponsive .cont_rivales #usu_visitante{
+                width:44%;
+            }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .datos{
+                    /*border:1px solid blue;*/
+                    display:flex;
+                    justify-content:space-between;
+                    margin-bottom:10px;
+                }
+
+                    #ruleta_container .areaNavegacionResponsive .cont_rivales .datos .foto, #ruleta_container .areaNavegacionResponsive .cont_rivales .datos .cont_nom_comp{
+                        /**/
+                        /*display:inline-table;*/
+                    }
+
+                    #ruleta_container .areaNavegacionResponsive .cont_rivales .datos .foto{
+                        /*border:1px solid black;*/
+                        border-radius:25px;
+                        max-width:50px;
+                        max-height:50px;
+                        overflow:hidden;
+                        width:30%;
+                    }
+
+                    #ruleta_container .areaNavegacionResponsive .cont_rivales .datos .cont_nom_comp{
+                        /*border:1px solid black;*/
+                        width:70%;
+                    }
+                        #ruleta_container .areaNavegacionResponsive .cont_rivales #usu_local .datos .cont_nom_comp{
+                            margin-left:10px;
+                            text-align:left;
+                        }
+                        #ruleta_container .areaNavegacionResponsive .cont_rivales #usu_visitante .datos .cont_nom_comp{
+                            margin-right:10px;
+                            text-align:right;
+                        }
+
+                        #ruleta_container .areaNavegacionResponsive .cont_rivales .datos .nombre_comp{
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            white-space: nowrap;
+                        }
+
+            #ruleta_container .areaNavegacionResponsive .cont_rivales #vs{
+                margin-top:20px;
+                max-width:50px;
+                padding:0px 5px;
+                width:12%;
+            }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias{
+                    width:100%;
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .cont_categ{
+                    display:flex;
+                    margin:0px auto;
+                    max-width:236px;
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .cont_categ .categoria{
+                    display:inline-table;
+                    height:100%;
+                    max-width:39px;
+                    overflow:hidden;
+                    width:16.6%;
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .categoria1{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .categoria2{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .categoria3{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .categoria4{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .categoria5{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .categoria6{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionResponsive .cont_rivales .categorias .ganado{
+                    color:red;
+                    font-weight:bold;
+                }
+
+        #ruleta_container .areaNavegacionResponsive .ruleta{
+            /**/
+        }
+
+            #ruleta_container .areaNavegacionResponsive .ruleta .cont_ruleta{
+                width:100%;
+            }
+
+            #ruleta_container .areaNavegacionResponsive .ruleta #canvasContainer{
+                cursor:pointer;
+                height:auto;
+                padding:15px 35px;
+                position:relative;
+                width:100%;
+            }
+            #ruleta_container .areaNavegacionResponsive .ruleta #canvasContainer.bloquear_giro{
+                cursor:no-drop !important;
+            }
+
+            #ruleta_container .areaNavegacionResponsive .ruleta #canvasContainer .cont_cerebro{
+                /*border:1px solid red;*/
+                width:100px;
+                height:100px;
+                position:absolute;
+            }
+
+            #ruleta_container .areaNavegacionResponsive .ruleta #canvasContainer .cont_cerebro .cerebro{
+                cursor:pointer;
+                height:auto;
+            }
+
+            #ruleta_container .areaNavegacionResponsive .ruleta .cont_ruleta #canvasContainer .cont_base{
+                background-image:url("../../../_img/modules/ruleta/base.png");
+                background-repeat:no-repeat;
+                background-position:center top;
+                background-size:auto 100%;
+                /*border:1px solid red;*/
+                max-width:350px;
+                padding:15px 15px 47px 18px;
+            }
+
+            @media screen and (max-width:320px){
+                #canvasContainer .cont_base{
+                    background-size:100% auto !important;
+                }
+            }
+
+
+            #ruleta_container .areaNavegacionResponsive .ruleta .cont_ruleta #canvasContainer #ruleta{
+                background-size:100% 100%;
+                height:auto;
+                max-width:250px;
+                min-height:auto;
+                width:100%;
+            }
+
+        #ruleta_container .areaNavegacionResponsive .barras{
+            width:100%;
+            padding-bottom:15px;
+        }
+
+            #ruleta_container .areaNavegacionResponsive .barras .cont_barra{
+                display:flex;
+                margin:0px auto;
+                max-width:150px;
+            }
+
+                #ruleta_container .areaNavegacionResponsive .barras .cont_barra .barra{
+                    display:inline-table;
+                    height:100%;
+                    margin:0px 2px;
+                    max-width:72px;
+                    width:31%;
+                }
+
+                #ruleta_container .areaNavegacionResponsive .barras .cont_barra .barra_llena{
+                    color:red;
+                    font-weight:bold;
+                }
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+    #ruleta_container{
+        background-color:black;
+    }
+
+    #ruleta_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:700px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #ruleta_container .page_content .contenedor_area{
+        margin:0px auto;
+        width:100%;
+    }
+
+        #ruleta_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:none;*/
+        }
+
+        #ruleta_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #ruleta_container .areaNavegacionEscritorio .concursantes{
+            width:100%;
+        }
+
+            #ruleta_container .areaNavegacionEscritorio .cont_rivales{
+                /*align-items:center;*/
+                /*border:1px solid red;*/
+                color:white;
+                display:flex;
+                justify-content:center;
+                padding:0px 5px;
+                width:100%;
+            }
+
+            #ruleta_container .areaNavegacionEscritorio .cont_rivales #usu_local, #ruleta_container .areaNavegacionEscritorio .cont_rivales #usu_visitante, #ruleta_container .areaNavegacionEscritorio .cont_rivales #vs{
+                /*border:1px solid red;*/
+                display:inline-table;
+                margin:5px 0px 10px 0px;
+            }
+
+            #ruleta_container .areaNavegacionEscritorio .cont_rivales #usu_local, #ruleta_container .areaNavegacionEscritorio .cont_rivales #usu_visitante{
+                width:44%;
+            }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .datos{
+                    /*border:1px solid blue;*/
+                    display:flex;
+                    justify-content:space-between;
+                    margin-bottom:10px;
+                }
+
+                    #ruleta_container .areaNavegacionEscritorio .cont_rivales .datos .foto, #ruleta_container .areaNavegacionEscritorio .cont_rivales .datos .cont_nom_comp{
+                        /**/
+                        /*display:inline-table;*/
+                    }
+
+                    #ruleta_container .areaNavegacionEscritorio .cont_rivales .datos .foto{
+                        /*border:1px solid black;*/
+                        border-radius:25px;
+                        max-width:50px;
+                        max-height:50px;
+                        overflow:hidden;
+                        width:30%;
+                    }
+
+                    #ruleta_container .areaNavegacionEscritorio .cont_rivales .datos .cont_nom_comp{
+                        /*border:1px solid black;*/
+                        width:70%;
+                    }
+                        #ruleta_container .areaNavegacionEscritorio .cont_rivales #usu_local .datos .cont_nom_comp{
+                            margin-left:10px;
+                            text-align:left;
+                        }
+                        #ruleta_container .areaNavegacionEscritorio .cont_rivales #usu_visitante .datos .cont_nom_comp{
+                            margin-right:10px;
+                            text-align:right;
+                        }
+
+                        #ruleta_container .areaNavegacionEscritorio .cont_rivales .datos .nombre_comp{
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            white-space: nowrap;
+                        }
+
+            #ruleta_container .areaNavegacionEscritorio .cont_rivales #vs{
+                margin-top:20px;
+                max-width:50px;
+                padding:0px 5px;
+                width:12%;
+            }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias{
+                    width:100%;
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .cont_categ{
+                    display:flex;
+                    margin:0px auto;
+                    max-width:236px;
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .cont_categ .categoria{
+                    display:inline-table;
+                    height:100%;
+                    max-width:39px;
+                    overflow:hidden;
+                    width:16.6%;
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .categoria1{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .categoria2{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .categoria3{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .categoria4{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .categoria5{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .categoria6{
+                    /**/
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .cont_rivales .categorias .ganado{
+                    color:red;
+                    font-weight:bold;
+                }
+
+        #ruleta_container .areaNavegacionEscritorio .ruleta{
+            /**/
+        }
+
+            #ruleta_container .areaNavegacionEscritorio .ruleta .cont_ruleta{
+                width:100%;
+            }
+
+            #ruleta_container .areaNavegacionEscritorio .ruleta #canvasContainer{
+                cursor:pointer;
+                height:auto;
+                padding:15px 35px;
+                position:relative;
+                width:100%;
+            }
+            #ruleta_container .areaNavegacionEscritorio .ruleta #canvasContainer.bloquear_giro{
+                cursor:no-drop !important;
+            }
+
+            #ruleta_container .areaNavegacionEscritorio .ruleta #canvasContainer .cont_cerebro{
+                /*border:1px solid red;*/
+                width:100px;
+                height:100px;
+                position:absolute;
+            }
+
+            #ruleta_container .areaNavegacionEscritorio .ruleta #canvasContainer .cont_cerebro .cerebro{
+                cursor:pointer;
+                height:auto;
+            }
+
+            #ruleta_container .areaNavegacionEscritorio .ruleta .cont_ruleta #canvasContainer .cont_base{
+                background-image:url("../../../_img/modules/ruleta/base.png");
+                background-repeat:no-repeat;
+                background-position:center top;
+                background-size:auto 100%;
+                /*border:1px solid red;*/
+                max-width:350px;
+                padding:15px 15px 47px 18px;
+            }
+
+            @media screen and (max-width:320px){
+                #canvasContainer .cont_base{
+                    background-size:100% auto !important;
+                }
+            }
+
+
+            #ruleta_container .areaNavegacionEscritorio .ruleta .cont_ruleta #canvasContainer #ruleta{
+                background-size:100% 100%;
+                height:auto;
+                max-width:250px;
+                min-height:auto;
+                width:100%;
+            }
+
+        #ruleta_container .areaNavegacionEscritorio .barras{
+            width:100%;
+            padding-bottom:15px;
+        }
+
+            #ruleta_container .areaNavegacionEscritorio .barras .cont_barra{
+                display:flex;
+                margin:0px auto;
+                max-width:190px;
+            }
+
+                #ruleta_container .areaNavegacionEscritorio .barras .cont_barra .barra{
+                    display:inline-table;
+                    height:100%;
+                    max-width:70px;
+                    width:33%;
+                }
+
+                #ruleta_container .areaNavegacionEscritorio .barras .cont_barra .barra_llena{
+                    color:red;
+                    font-weight:bold;
+                }
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}
+
+/************************/
+/*  ESTILOS IFRAME EDGE PARA SWEETALERT   */
+#iframe_edge{
+    /*height:auto;*//*Se hace el cálculo por js*/
+    max-width:290px !important;
+    max-height:322px !important;
+    overflow:hidden;
+    width:100%;
+}
+
+.btn_jugar{
+    background-color:#1fbba6;
+    border:0px;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    height:30px;
+    margin:0px auto;
+    max-width:200px;
+    min-width:125px;
+    text-align:center;
+    width:100%;
+}
+.btn_jugar:hover{
+    background-color:rgba(31,187,166,0.5);
+}

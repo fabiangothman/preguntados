@@ -1,0 +1,325 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+.alertsContainer .alert{
+	margin-bottom:0px !important;
+}
+
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #login_container{
+        background-color:black;
+    }
+
+    #login_container .page_content{
+        background-color:#2081ae;
+        
+        background-image:url("../../../_img/common/fondo2.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #login_container .page_content .contenedor_area{
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #login_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #login_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+		    height:100%;
+		    width:100%;
+        }
+
+        	#login_container .contenedor_banner{
+	        	margin:0px auto;
+        	}
+
+        	#login_container .contenedor_logo{
+	        	margin:0px auto;
+        	}
+        		#login_container .contenedor_logo .logo{
+		        	margin:0px auto;
+		        	max-width:290px;
+	        	}
+
+        	#login_container .contenedor_form{
+	        	margin:20px auto;
+	        }
+	        	#login_container .contenedor_form .borde_form{
+		        	background-color:rgba(255, 255, 255, 0.5);
+		        	border-radius:15px;
+		        	margin:0px auto;
+	            	max-width:310px;
+	            	overflow:hidden;
+	            	padding:5px;
+	            	width:100%;
+		        }
+		        	#login_container .contenedor_form .borde_form .cuerpo_form{
+			        	background-color:rgba(255, 255, 255, 0.7);
+			        	border-radius:15px;
+			        	overflow:hidden;
+			        	padding:20px 5px;
+			        	text-align:center;
+			        }
+
+			        #login_container .cuerpo_form .cont_campos{
+			        	/*border:1px solid red;*/
+			        	padding:5px;
+			        }
+			        	#login_container .cuerpo_form .cont_campos .campo{
+				        	/*border:1px solid blue;*/
+				        	margin:20px 0px;
+				        }
+
+				        #login_container .cuerpo_form .cont_campos .campo.datos{
+				        	align-items:center;
+				        	display:flex;
+				        }
+				        	#login_container .cuerpo_form .cont_campos .campo.datos .cont_texto, #login_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		/*border:1px solid red;*/
+				        		display:inline-block;
+				        	}
+				        	#login_container .cuerpo_form .cont_campos .campo.datos .cont_texto{
+				        		width:40%;
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.datos .cont_texto .texto{
+					        		color:#492957;
+					        		font-size:16px;
+					        		font-weight:bold;
+					        		width:100%;
+					        	}
+				        	#login_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		width:60%;
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.datos .cont_input .input{
+					        		border:0px;
+					        		border-color:grey;
+					        		border-style:dotted;
+					        		border-width:2px;
+					        		height:32px;
+					        		padding:0px 6px;
+					        		width:100%;
+					        	}
+				        #login_container .cuerpo_form .cont_campos .campo.boton{
+				        	/**/
+				        }
+				        	#login_container .cuerpo_form .cont_campos .campo.boton .cont_submit{
+				        		/**/
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.boton .cont_submit .enviar{
+					        		background-color:#492957;
+					        		border:0px;
+					        		border-radius:5px;
+					        		color:white;
+					        		height:35px;
+					        		width:150px;
+					        	}
+
+					    #login_container .cuerpo_form .cont_campos .campo.mensajes{
+				        	margin-top:25px;
+				        	margin-bottom:5px;
+				        }
+				        	#login_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes{
+				        		/**/
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes .mensaje{
+				        			font-size:0.8em;
+				        		}
+
+                    
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+
+    #login_container{
+        background-color:black;
+    }
+
+    #login_container .page_content{
+        background-color:#2081ae;
+        
+        background-image:url("../../../_img/common/fondo2.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        
+        margin:0px auto;
+        max-width:700px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #login_container .page_content .contenedor_area{
+        margin:0px auto;
+        width:100%;
+    }
+
+        #login_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:none;*/
+        }
+
+        #login_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:block;*/
+            display:table;
+		    height:100%;
+		    /*padding-top:40px;*/
+		    /*position:absolute;*/
+		    width:100%;
+        }
+
+       #login_container .contenedor_banner{
+	        	margin:0px auto;
+        	}
+
+        	#login_container .contenedor_logo{
+	        	margin:0px auto;
+        	}
+        		#login_container .contenedor_logo .logo{
+		        	margin:0px auto;
+		        	max-width:390px;
+	        	}
+
+        	#login_container .contenedor_form{
+	        	margin:20px auto;
+	        }
+	        	#login_container .contenedor_form .borde_form{
+		        	background-color:rgba(255, 255, 255, 0.5);
+		        	border-radius:15px;
+		        	margin:0px auto;
+	            	max-width:310px;
+	            	overflow:hidden;
+	            	padding:5px;
+	            	width:100%;
+		        }
+		        	#login_container .contenedor_form .borde_form .cuerpo_form{
+			        	background-color:rgba(255, 255, 255, 0.7);
+			        	border-radius:15px;
+			        	overflow:hidden;
+			        	padding:20px 5px;
+			        	text-align:center;
+			        }
+
+			        #login_container .cuerpo_form .cont_campos{
+			        	/*border:1px solid red;*/
+			        	padding:5px;
+			        }
+			        	#login_container .cuerpo_form .cont_campos .campo{
+				        	/*border:1px solid blue;*/
+				        	margin:20px 0px;
+				        }
+
+				        #login_container .cuerpo_form .cont_campos .campo.datos{
+				        	align-items:center;
+				        	display:flex;
+				        }
+				        	#login_container .cuerpo_form .cont_campos .campo.datos .cont_texto, #login_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		/*border:1px solid red;*/
+				        		display:inline-block;
+				        	}
+				        	#login_container .cuerpo_form .cont_campos .campo.datos .cont_texto{
+				        		width:40%;
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.datos .cont_texto .texto{
+					        		color:#2081ae;
+					        		font-size:16px;
+					        		font-weight:bold;
+					        		width:100%;
+					        	}
+				        	#login_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		width:60%;
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.datos .cont_input .input{
+					        		border:0px;
+					        		border-color:grey;
+					        		border-style:dotted;
+					        		border-width:2px;
+					        		height:32px;
+					        		padding:0px 6px;
+					        		width:100%;
+					        	}
+				        #login_container .cuerpo_form .cont_campos .campo.boton{
+				        	/**/
+				        }
+				        	#login_container .cuerpo_form .cont_campos .campo.boton .cont_submit{
+				        		/**/
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.boton .cont_submit .enviar{
+					        		background-color:#2081ae;
+					        		border:0px;
+					        		border-radius:5px;
+					        		color:white;
+					        		height:35px;
+					        		width:150px;
+					        	}
+
+					    #login_container .cuerpo_form .cont_campos .campo.mensajes{
+				        	margin-top:25px;
+				        	margin-bottom:5px;
+				        }
+				        	#login_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes{
+				        		/**/
+				        	}
+				        		#login_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes .mensaje{
+				        			font-size:0.8em;
+				        		}
+        
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}
+
+.divisorInfo{
+    margin:3px 0px;
+    border:0;
+    border-top: 1px solid #bbb;
+}

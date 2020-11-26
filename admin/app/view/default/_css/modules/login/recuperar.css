@@ -1,0 +1,329 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+.alertsContainer .alert{
+	margin-bottom:0px !important;
+}
+body{
+	width:100% !important;
+	max-width:100% !important;
+}
+
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #recuperar_container{
+        background-color:black;
+    }
+
+    #recuperar_container .page_content{
+        background-color:#3ba0a4;
+        
+        background-image:url("../../../_img/common/fondo2.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #recuperar_container .page_content .contenedor_area{
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #recuperar_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #recuperar_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+		    height:100%;
+		    width:100%;
+        }
+
+        	#recuperar_container .contenedor_banner{
+	        	margin:0px auto;
+        	}
+
+        	#recuperar_container .contenedor_logo{
+	        	margin:0px auto;
+        	}
+        		#recuperar_container .contenedor_logo .logo{
+		        	margin:0px auto;
+		        	max-width:290px;
+	        	}
+
+        	#recuperar_container .contenedor_form{
+	        	margin:20px auto;
+	        }
+	        	#recuperar_container .contenedor_form .borde_form{
+		        	background-color:rgba(255, 255, 255, 0.5);
+		        	border-radius:15px;
+		        	margin:0px auto;
+	            	max-width:310px;
+	            	overflow:hidden;
+	            	padding:5px;
+	            	width:100%;
+		        }
+		        	#recuperar_container .contenedor_form .borde_form .cuerpo_form{
+			        	background-color:rgba(255, 255, 255, 0.7);
+			        	border-radius:15px;
+			        	overflow:hidden;
+			        	padding:20px 5px;
+			        	text-align:center;
+			        }
+
+			        #recuperar_container .cuerpo_form .cont_campos{
+			        	/*border:1px solid red;*/
+			        	padding:5px;
+			        }
+			        	#recuperar_container .cuerpo_form .cont_campos .campo{
+				        	/*border:1px solid blue;*/
+				        	margin:20px 0px;
+				        }
+
+				        #recuperar_container .cuerpo_form .cont_campos .campo.datos{
+				        	align-items:center;
+				        	display:flex;
+				        }
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_texto, #recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		/*border:1px solid red;*/
+				        		display:inline-block;
+				        	}
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_texto{
+				        		width:40%;
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_texto .texto{
+					        		color:#492957;
+					        		font-size:16px;
+					        		font-weight:bold;
+					        		width:100%;
+					        	}
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		width:60%;
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_input .input{
+					        		border:0px;
+					        		border-color:grey;
+					        		border-style:dotted;
+					        		border-width:2px;
+					        		height:32px;
+					        		padding:0px 6px;
+					        		width:100%;
+					        	}
+				        #recuperar_container .cuerpo_form .cont_campos .campo.boton{
+				        	/**/
+				        }
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.boton .cont_submit{
+				        		/**/
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.boton .cont_submit .enviar{
+					        		background-color:#492957;
+					        		border:0px;
+					        		border-radius:5px;
+					        		color:white;
+					        		height:35px;
+					        		width:150px;
+					        	}
+
+					    #recuperar_container .cuerpo_form .cont_campos .campo.mensajes{
+				        	margin-top:25px;
+				        	margin-bottom:5px;
+				        }
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes{
+				        		/**/
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes .mensaje{
+				        			font-size:0.8em;
+				        		}
+
+                    
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+
+    #recuperar_container{
+        background-color:black;
+    }
+
+    #recuperar_container .page_content{
+        background-color:#3ba0a4;
+        
+        background-image:url("../../../_img/common/fondo2.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        
+        margin:0px auto;
+        max-width:700px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #recuperar_container .page_content .contenedor_area{
+        margin:0px auto;
+        width:100%;
+    }
+
+        #recuperar_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:none;*/
+        }
+
+        #recuperar_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:block;*/
+            display:table;
+		    height:100%;
+		    /*padding-top:40px;*/
+		    /*position:absolute;*/
+		    width:100%;
+        }
+
+       #recuperar_container .contenedor_banner{
+	        	margin:0px auto;
+        	}
+
+        	#recuperar_container .contenedor_logo{
+	        	margin:0px auto;
+        	}
+        		#recuperar_container .contenedor_logo .logo{
+		        	margin:0px auto;
+		        	max-width:390px;
+	        	}
+
+        	#recuperar_container .contenedor_form{
+	        	margin:20px auto;
+	        }
+	        	#recuperar_container .contenedor_form .borde_form{
+		        	background-color:rgba(255, 255, 255, 0.5);
+		        	border-radius:15px;
+		        	margin:0px auto;
+	            	max-width:310px;
+	            	overflow:hidden;
+	            	padding:5px;
+	            	width:100%;
+		        }
+		        	#recuperar_container .contenedor_form .borde_form .cuerpo_form{
+			        	background-color:rgba(255, 255, 255, 0.7);
+			        	border-radius:15px;
+			        	overflow:hidden;
+			        	padding:20px 5px;
+			        	text-align:center;
+			        }
+
+			        #recuperar_container .cuerpo_form .cont_campos{
+			        	/*border:1px solid red;*/
+			        	padding:5px;
+			        }
+			        	#recuperar_container .cuerpo_form .cont_campos .campo{
+				        	/*border:1px solid blue;*/
+				        	margin:20px 0px;
+				        }
+
+				        #recuperar_container .cuerpo_form .cont_campos .campo.datos{
+				        	align-items:center;
+				        	display:flex;
+				        }
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_texto, #recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		/*border:1px solid red;*/
+				        		display:inline-block;
+				        	}
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_texto{
+				        		width:40%;
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_texto .texto{
+					        		color:#492957;
+					        		font-size:16px;
+					        		font-weight:bold;
+					        		width:100%;
+					        	}
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_input{
+				        		width:60%;
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.datos .cont_input .input{
+					        		border:0px;
+					        		border-color:grey;
+					        		border-style:dotted;
+					        		border-width:2px;
+					        		height:32px;
+					        		padding:0px 6px;
+					        		width:100%;
+					        	}
+				        #recuperar_container .cuerpo_form .cont_campos .campo.boton{
+				        	/**/
+				        }
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.boton .cont_submit{
+				        		/**/
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.boton .cont_submit .enviar{
+					        		background-color:#492957;
+					        		border:0px;
+					        		border-radius:5px;
+					        		color:white;
+					        		height:35px;
+					        		width:150px;
+					        	}
+
+					    #recuperar_container .cuerpo_form .cont_campos .campo.mensajes{
+				        	margin-top:25px;
+				        	margin-bottom:5px;
+				        }
+				        	#recuperar_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes{
+				        		/**/
+				        	}
+				        		#recuperar_container .cuerpo_form .cont_campos .campo.mensajes .cont_mensajes .mensaje{
+				        			font-size:0.8em;
+				        		}
+        
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}
+
+.divisorInfo{
+    margin:3px 0px;
+    border:0;
+    border-top: 1px solid #bbb;
+}

@@ -1,0 +1,23 @@
+
+(function(compId){var _=null,y=true,n=false,zy='scaleY',e18='${fondo}',x2='5.0.0',e28='${titilar}',x4='rgba(0,0,0,0)',zx='scaleX',b='block',cl='clip',x27='true',m='rect',e13='${in}',e19='${nombre}',i='none',x14='rect(@@0@@px @@1@@px @@2@@px @@3@@px)',x3='6.0.0.400',o='opacity',lf='left',x22='179px',x25='0.8',x24='titilar',x23='auto',x21='173px',e16='${Symbol_1}',e15='${boton}',x20='0px',x11='rgba(255,255,255,1)',tp='top',x1='6.0.0',e17='${tex1}',d='display',g='image',e12='${cerebro}',w='width';var g6='nombre.png',g5='fondo.png',g7='cerebro.png',g8='tex1.png',g26='titilar.png',g9='boton.png',g10='in.png';var im='images/',aud='media/',vid='media/',js='js/',fonts={},opts={'gAudioPreloadPreference':'auto','gVideoPreloadPreference':'auto'},resources=[],scripts=[],symbols={"stage":{v:x1,mv:x2,b:x3,stf:w,cg:i,rI:n,cn:{dom:[{id:'fondo',t:g,r:['0px','0px','530px','847px','auto','auto'],o:'0',f:[x4,im+g5,'0px','0px'],tf:[[],[],[],['0.36139','0.36139']]},{id:'nombre',t:g,r:['-769px','433px','484px','286px','auto','auto'],f:[x4,im+g6,'0px','0px']},{id:'cerebro',t:g,r:['67px','123px','364px','366px','auto','auto'],o:'0',f:[x4,im+g7,'0px','0px'],tf:[[],[],[],['0.2459','0.2459']]},{id:'tex1',v:i,t:g,r:['255px','-101px','244px','90px','auto','auto'],cu:'pointer',f:[x4,im+g8,'0px','0px']},{id:'Symbol_1',symbolName:'Symbol_1',v:i,t:m,r:['294px','65','173','179','auto','auto'],o:'0.79310344827586'},{id:'boton',t:g,r:['282px','576px','248px','254px','auto','auto'],cu:'pointer',o:'0',f:[x4,im+g9,'0px','0px'],tf:[[],[],[],['0.31859','0.31859']]},{id:'in',v:i,t:g,r:['0px','113px','538px','733px','auto','auto'],cl:'rect(0px 538px -9.307861328125px 0px)',cu:'pointer',f:[x4,im+g10,'0px','0px']}],style:{'${Stage}':{isStage:true,r:['null','null','530px','846px','auto','auto'],overflow:'hidden',f:[x11]}}},tt:{d:4000,a:y,l:{"0":2750,"1":2920},data:[["eid12",o,1175,525,"easeInOutBack",e12,'0','1'],["eid40",cl,2920,725,"linear",e13,[0,538,-9.307861328125,0],[0,538,733,0],{vt:x14}],["eid16",zx,2225,525,"easeInOutBack",e15,'0.31859','1'],["eid37",o,2805,0,"linear",e16,'0.79310344827586','0.79310344827586'],["eid23",lf,525,510,"easeInOutBack",e17,'255px','256px'],["eid20",o,2225,525,"easeInOutBack",e15,'0','1'],["eid42",tp,4000,0,"linear",e13,'113px','113px'],["eid6",o,0,525,"easeInOutBack",e18,'0','1'],["eid4",zy,0,525,"easeInOutBack",e18,'0.36139','1'],["eid18",zy,2225,525,"easeInOutBack",e15,'0.31859','1'],["eid34",d,2805,0,"linear",e16,i,b],["eid38",d,2920,0,"linear",e13,i,b],["eid35",lf,2805,0,"linear",e16,'294px','294px'],["eid14",lf,1700,525,"easeInOutBack",e19,'-769px','23px'],["eid2",zx,0,525,"easeInOutBack",e18,'0.36139','1'],["eid21",d,525,0,"easeInOutBack",e17,i,b],["eid10",zy,1175,525,"easeInOutBack",e12,'0.2459','1'],["eid8",zx,1175,525,"easeInOutBack",e12,'0.2459','1'],["eid25",tp,525,510,"easeInOutBack",e17,'-101px','28px']]}},"Symbol_1":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:n,cn:{dom:[{r:[x20,x20,x21,x22,x23,x23],id:x24,tf:[[],[],[],[x25,x25]],t:g,f:[x4,im+g26,x20,x20]}],style:{'${symbolSelector}':{isStage:x27,r:[undefined,undefined,x21,x22]}}},tt:{d:1010,a:y,l:{"1":0},data:[["eid27",zx,0,505,"linear",e28,'0.8','1'],["eid32",zx,505,505,"linear",e28,'1','0.8'],["eid29",zy,0,505,"linear",e28,'0.8','1'],["eid33",zy,505,505,"linear",e28,'1','0.8']]}}};AdobeEdge.registerCompositionDefn(compId,symbols,fonts,scripts,resources,opts);})("EDGE-27379161");
+(function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
+//Edge symbol: 'stage'
+(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",2805,function(sym,e){sym.stop();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${in}","click",function(sym,e){sym.play("0");});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${tex1}","click",function(sym,e){sym.play("1");});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${boton}","click",function(sym,e){window.parent.open("../../../modules/home/home","_self");});
+//Edge binding end
+})("stage");
+//Edge symbol end:'stage'
+
+//=========================================================
+
+//Edge symbol: 'Symbol_1'
+(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",1010,function(sym,e){sym.play("1");});
+//Edge binding end
+})("Symbol_1");
+//Edge symbol end:'Symbol_1'
+})})(AdobeEdge.$,AdobeEdge,"EDGE-27379161");

@@ -1,0 +1,486 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #rankingsemanal_container{
+        background-color:black;
+    }
+
+    #rankingsemanal_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #rankingsemanal_container .page_content .contenedor_area{
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #rankingsemanal_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #rankingsemanal_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #rankingsemanal_container .rank_cont{
+            margin:0px auto;
+            max-width:500px;
+            padding:5px 15px;
+        }
+            #rankingsemanal_container .rank_cont .titulo_cont, #rankingsemanal_container .rank_cont .tabla_cont{
+                /*border:2px solid green;*/
+            }
+            #rankingsemanal_container .rank_cont .titulo_cont{
+                margin-top:20px;
+                margin-bottom:30px;
+            }
+                #rankingsemanal_container .rank_cont .titulo_cont .titulo{
+                    margin:0px auto;
+                    /*min-width:100px;*/
+                    width:80%;
+                }
+
+                    #rankingsemanal_container .rank_cont .titulo_cont .titulo .texto{
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+                    #rankingsemanal_container .rank_cont .titulo_cont .titulo .sub_texto{
+                        color:white;
+                        font-size:12px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+
+            #rankingsemanal_container .rank_cont .tabla_cont{
+                margin-bottom:20px;
+                width:100%;
+            }
+                #rankingsemanal_container .rank_cont .tabla_cont .tabla{
+                    display:flex;
+                    width:100%;
+                }
+                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.left_col{
+                        width:75%;
+                    }
+                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.right_col{
+                        width:25%;
+                    }
+                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column{
+                        /*border:1px solid green;*/
+                        display:inline-block;
+                    }
+
+                        #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col.cont_left{
+                            /**/
+                        }
+                        #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col.cont_right{
+                            /**/
+                        }                    
+                        #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col{
+                            /**/
+                        }
+                            #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont, #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                /*min-width:70px;*/
+                                overflow:hidden;
+                                width:100%;
+                            }
+                            #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont{
+                                background-color:#f11f42;
+                            }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont .titl_area, #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                    margin:0px 5px;
+                                }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont .titl_area{
+                                    /**/
+                                }
+                                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .left_col .cont_col .tbl_titu_cont .titl_area{
+                                        margin-left:10px;
+                                    }
+                                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .left_col .cont_col .tbl_titu_cont .titl_area .texto{
+                                        border-right:1px solid white;
+                                    }
+                                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont .titl_area .texto{
+                                        color:white;
+                                        font-size:15px;
+                                        font-weight:bold;
+                                        margin:5px 0px;
+                                        overflow:hidden;
+                                    }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.left_col .cont_col .tbl_titu_cont .titl_area{
+                                    text-align:left;
+                                }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.right_col .cont_col .tbl_titu_cont .titl_area{
+                                    text-align:center;
+                                }
+
+                            #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                background-color:white;
+                            }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                }
+
+                                    #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .list_area .cont_info{
+                                        /**/
+                                    }
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos{
+                                            /*border:1px solid blue;*/
+                                            height:70px;
+                                            margin:5px 0px;
+                                        }
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador.mi_area, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos.mi_area{
+                                            background-color:rgba(29, 187, 164, 0.3);
+                                        }
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador{
+                                            display:flex;
+                                        }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_posicion, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                align-items:center;
+                                                /*border:1px solid red;*/
+                                                color:black;
+                                                display:flex;
+                                                justify-content:center;
+                                                height:100%;
+                                                margin:0px 3px;
+                                                overflow:hidden;
+                                            }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_posicion{
+                                                width:15%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_posicion .posicion{
+                                                    font-weight:bold;
+                                                    font-size:17px;
+                                                }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto{
+                                                width:25%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto .foto{
+                                                    border-radius:25px;
+                                                    max-width:50px;
+                                                    max-height:50px;
+                                                    overflow:hidden;
+                                                    width:100%;
+                                                }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                width:60%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user{
+                                                    width:100%;
+                                                    font-size:13px;
+                                                }
+                                                    #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .nombre, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .apellido, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .correo{
+                                                        overflow:hidden;
+                                                        text-overflow:ellipsis;
+                                                        white-space:nowrap;
+                                                    }
+                                                    #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .correo{
+                                                        color:grey;
+                                                    }
+
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos{
+                                            /**/
+                                        }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_acertadas, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_partidas{
+                                                align-items:center;
+                                                /*border:1px solid red;*/
+                                                display:flex;
+                                                justify-content:center;
+                                            }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_acertadas{
+                                                height:65%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_acertadas .acertadas{
+                                                    color:#2bb6a4;
+                                                    font-size:23px;
+                                                }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_partidas{
+                                                height:35%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_partidas .partidas{
+                                                    color:grey;
+                                                    font-size:12px;
+                                                }
+
+                    
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+    #rankingsemanal_container{
+        background-color:black;
+    }
+
+    #rankingsemanal_container .page_content{
+        background-color:#3ba0a4;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:700px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #rankingsemanal_container .page_content .contenedor_area{
+        margin:0px auto;
+        width:100%;
+    }
+
+        #rankingsemanal_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:none;*/
+        }
+
+        #rankingsemanal_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #rankingsemanal_container .rank_cont{
+            margin:0px auto;
+            max-width:500px;
+            padding:5px 15px;
+        }
+            #rankingsemanal_container .rank_cont .titulo_cont, #rankingsemanal_container .rank_cont .tabla_cont{
+                /*border:2px solid green;*/
+            }
+            #rankingsemanal_container .rank_cont .titulo_cont{
+                margin-top:20px;
+                margin-bottom:30px;
+            }
+                #rankingsemanal_container .rank_cont .titulo_cont .titulo{
+                    margin:0px auto;
+                    /*min-width:100px;*/
+                    width:80%;
+                }
+
+                    #rankingsemanal_container .rank_cont .titulo_cont .titulo .texto{
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+                    #rankingsemanal_container .rank_cont .titulo_cont .titulo .sub_texto{
+                        color:white;
+                        font-size:12px;
+                        font-weight:bold;
+                        margin:10px 0px;
+                        text-align:center;
+                    }
+
+            #rankingsemanal_container .rank_cont .tabla_cont{
+                margin-bottom:20px;
+                width:100%;
+            }
+                #rankingsemanal_container .rank_cont .tabla_cont .tabla{
+                    display:flex;
+                    width:100%;
+                }
+                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.left_col{
+                        width:75%;
+                    }
+                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.right_col{
+                        width:25%;
+                    }
+                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column{
+                        /*border:1px solid green;*/
+                        display:inline-block;
+                    }
+
+                        #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col.cont_left{
+                            /**/
+                        }
+                        #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col.cont_right{
+                            /**/
+                        }                    
+                        #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col{
+                            /**/
+                        }
+                            #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont, #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                /*min-width:70px;*/
+                                overflow:hidden;
+                                width:100%;
+                            }
+                            #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont{
+                                background-color:#f11f42;
+                            }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont .titl_area, #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                    margin:0px 5px;
+                                }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont .titl_area{
+                                    /**/
+                                }
+                                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .left_col .cont_col .tbl_titu_cont .titl_area{
+                                        margin-left:10px;
+                                    }
+                                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .left_col .cont_col .tbl_titu_cont .titl_area .texto{
+                                        border-right:1px solid white;
+                                    }
+                                    #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_titu_cont .titl_area .texto{
+                                        color:white;
+                                        font-size:15px;
+                                        font-weight:bold;
+                                        margin:5px 0px;
+                                        overflow:hidden;
+                                    }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.left_col .cont_col .tbl_titu_cont .titl_area{
+                                    text-align:left;
+                                }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column.right_col .cont_col .tbl_titu_cont .titl_area{
+                                    text-align:center;
+                                }
+
+                            #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont{
+                                background-color:white;
+                            }
+                                #rankingsemanal_container .rank_cont .tabla_cont .tabla .column .cont_col .tbl_list_cont .list_area{
+                                    /**/
+                                }
+
+                                    #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .list_area .cont_info{
+                                        /**/
+                                    }
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos{
+                                            /*border:1px solid blue;*/
+                                            height:70px;
+                                            margin:5px 0px;
+                                        }
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador.mi_area, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos.mi_area{
+                                            background-color:rgba(29, 187, 164, 0.3);
+                                        }
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador{
+                                            display:flex;
+                                        }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_posicion, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                align-items:center;
+                                                /*border:1px solid red;*/
+                                                color:black;
+                                                display:flex;
+                                                justify-content:center;
+                                                height:100%;
+                                                margin:0px 3px;
+                                                overflow:hidden;
+                                            }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_posicion{
+                                                width:15%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_posicion .posicion{
+                                                    font-weight:bold;
+                                                    font-size:17px;
+                                                }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto{
+                                                width:25%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_foto .foto{
+                                                    border-radius:25px;
+                                                    max-width:50px;
+                                                    max-height:50px;
+                                                    overflow:hidden;
+                                                    width:100%;
+                                                }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data{
+                                                width:60%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user{
+                                                    width:100%;
+                                                    font-size:13px;
+                                                }
+                                                    #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .nombre, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .apellido, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .correo{
+                                                        overflow:hidden;
+                                                        text-overflow:ellipsis;
+                                                        white-space:nowrap;
+                                                    }
+                                                    #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_jugador .cont_user_data .cont_user .correo{
+                                                        color:grey;
+                                                    }
+
+                                        #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos{
+                                            /**/
+                                        }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_acertadas, #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_partidas{
+                                                align-items:center;
+                                                /*border:1px solid red;*/
+                                                display:flex;
+                                                justify-content:center;
+                                            }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_acertadas{
+                                                height:65%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_acertadas .acertadas{
+                                                    color:#2bb6a4;
+                                                    font-size:23px;
+                                                }
+                                            #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_partidas{
+                                                height:35%;
+                                            }
+                                                #rankingsemanal_container .rank_cont .tabla .column .tbl_list_cont .info_juegos .cont_partidas .partidas{
+                                                    color:grey;
+                                                    font-size:12px;
+                                                }
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}
+
+.divisorInfo{
+    margin:3px 0px;
+    border:0;
+    border-top: 1px solid #bbb;
+}

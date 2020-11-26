@@ -1,0 +1,72 @@
+/* CSS Document */
+
+body
+{
+	border: 5px solid #06060699;
+	max-width: 1000px;
+	width: 1000px;
+	height: auto;
+	background-color: #fff;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-width: 0px;
+}
+
+.btn-dark{
+	color: #fff !important;
+	background-color: #343a40;
+	border-color: #343a40;
+}
+
+.btn-dark:hover{
+	color: #fff !important;
+	background-color: #23272b;
+	border-color: #1d2124;
+}
+
+.btn-secondary {
+    color: #fff !important;
+    background-color: #868e96;
+    border-color: #868e96;
+}
+
+.btn-secondary:hover {
+	color: #fff !important;
+	background-color: #727b84;
+	border-color: #6c757d;
+}
+
+.img_foto{
+	vertical-align: middle;
+	border-radius: 25px;
+	border: 1px solid #000;
+	width: 50px;
+	height: 50px;
+}
+
+table{
+	text-align: center;
+}
+
+table th{
+	text-align: center;
+}
+
+.Titulo1{
+	font-size: 25px;
+	font-weight: bold;	
+}
+
+.Titulo2{
+	text-align: left;
+}
+
+#simplemodal-overlay
+{
+	background-color: rgb(44, 23, 50) !important;
+}
+
+#simplemodal-overlay
+{
+	background-color: rgb(44, 23, 50) !important;
+}

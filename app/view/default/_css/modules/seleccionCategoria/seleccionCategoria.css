@@ -1,0 +1,286 @@
+<?php
+	/****************************************************************************
+	*	Desarrollado por: Fabián Murillo, fabianmurillo.01@gmail.com			*
+	*					  Juan Suárez, juancsuarezg@correo.udistrital.edu.co	*
+	*					  © 2017												*
+	****************************************************************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+@-ms-viewport{
+	zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+@viewport{
+    zoom:1.0;
+    width:device-width;
+    width:extend-to-zoom;
+}
+
+
+/************************************/
+/*  Tamaño para versión en móviles  */
+/*max-width:599px + 20px, por si se genera scroll*/
+@media screen and (min-width:0px) and (max-width:619px) {
+    #seleccionCategoria_container{
+        background-color:black;
+    }
+
+    #seleccionCategoria_container .page_content{
+        background-color:#0078b9;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:599px;
+    }
+
+
+    /************************/
+    /*  Inicia la edición   */
+    #seleccionCategoria_container .page_content .contenedor_area{
+        background-color:rgba(226, 52, 43, 0.9);
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #seleccionCategoria_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:none;*/
+        }
+
+        #seleccionCategoria_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:block;*/
+            height:auto;
+        }
+
+    #seleccionCategoria_container .cont_seleccion{
+        /*border:1px solid red;*/
+        padding:20px 0px;
+    }
+
+        #seleccionCategoria_container .cont_seleccion .cont_titulos, #seleccionCategoria_container .cont_seleccion .cont_categorias, #seleccionCategoria_container .cont_seleccion .cont_botones{
+            /*border:1px solid blue;*/
+            margin:0px 10px;
+        }
+
+        #seleccionCategoria_container .cont_seleccion .cont_titulos{
+            /**/
+        }
+
+            #seleccionCategoria_container .cont_seleccion .cont_titulos .tit_general, #seleccionCategoria_container .cont_seleccion .cont_titulos #tit_categ_selecc{
+                /*border:1px solid green;*/
+                color: white;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            #seleccionCategoria_container .cont_seleccion .cont_titulos .tit_general{
+                font-size: 20px;
+                margin-bottom:10px;
+                max-width: 245px;
+            }
+
+            #seleccionCategoria_container .cont_seleccion .cont_titulos #tit_categ_selecc{
+                font-size: 18px;
+                line-height:28px;
+                font-weight:bold;
+                min-height:30px;
+            }
+
+        #seleccionCategoria_container .cont_seleccion .cont_categorias{
+            /**/
+        }
+
+            #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias{
+                /*border:1px solid red;*/
+                margin:0px auto;
+                max-width:419px;   /*Para evitar que cuando se expanda pase de 3 columnas*/
+                text-align:center;
+            }
+
+                #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias .cont_personaje{
+                    /*border:1px solid green;*/
+                    background-color:white;
+                    border-radius:7px;
+                    cursor:pointer;
+                    display:inline-block;
+                    margin:5px;
+                }
+
+                #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias .cont_personaje:hover{
+                    background-color:#0078b9;
+                }
+
+                    #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias .cont_personaje .personaje{
+                        /**/
+                    }
+
+        #seleccionCategoria_container .cont_seleccion .cont_botones{
+            /**/
+            margin:30px 0px 10px 0px;
+        }
+
+            #seleccionCategoria_container .cont_seleccion .cont_botones .btn_jugar{
+                background-color:#0078b9;
+                /*border:1px solid green;*/
+                border-radius:5px;
+                color:white;
+                cursor:pointer;
+                font-weight:bold;
+                height:30px;
+                line-height:30px;
+                margin:0px auto;
+                max-width:200px;
+                min-width:40px;
+                text-align:center;
+                width:70%;
+            }
+
+            #seleccionCategoria_container .cont_seleccion .cont_botones .btn_jugar:hover{
+                background-color:rgba(0, 120, 185, 0.7);
+            }
+}
+
+
+/****************************************/
+/*  Tamaño para versión en escritorio   */
+/*min-width:600px, arranca en 619 si se genera scroll*/
+@media screen and (min-width:600px){
+    #seleccionCategoria_container{
+        background-color:black;
+    }
+
+    #seleccionCategoria_container .page_content{
+        background-color:#0078b9;
+        background-image:url("../../../_img/common/fondo1.png");
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size:100% auto;
+        margin:0px auto;
+        max-width:700px;
+    }
+
+    /************************/
+    /*  Inicia la edición   */
+    #seleccionCategoria_container .page_content .contenedor_area{
+        background-color:rgba(226, 52, 43, 0.9);
+        margin:0px auto;
+        min-width:200px;
+        width:100%;
+    }
+
+        #seleccionCategoria_container .page_content .contenedor_area .areaNavegacionResponsive{
+            /*display:none;*/
+        }
+
+        #seleccionCategoria_container .page_content .contenedor_area .areaNavegacionEscritorio{
+            /*display:block;*/
+            height:auto;
+        }
+
+        #seleccionCategoria_container .cont_seleccion{
+        /*border:1px solid red;*/
+        padding:20px 0px;
+    }
+
+        #seleccionCategoria_container .cont_seleccion .cont_titulos, #seleccionCategoria_container .cont_seleccion .cont_categorias, #seleccionCategoria_container .cont_seleccion .cont_botones{
+            /*border:1px solid blue;*/
+            margin:0px 10px;
+        }
+
+        #seleccionCategoria_container .cont_seleccion .cont_titulos{
+            /**/
+        }
+
+            #seleccionCategoria_container .cont_seleccion .cont_titulos .tit_general, #seleccionCategoria_container .cont_seleccion .cont_titulos #tit_categ_selecc{
+                /*border:1px solid green;*/
+                color: white;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            #seleccionCategoria_container .cont_seleccion .cont_titulos .tit_general{
+                font-size: 20px;
+                margin-bottom:10px;
+                max-width: 245px;
+            }
+
+            #seleccionCategoria_container .cont_seleccion .cont_titulos #tit_categ_selecc{
+                font-size: 18px;
+                line-height:28px;
+                font-weight:bold;
+                min-height:30px;
+            }
+
+        #seleccionCategoria_container .cont_seleccion .cont_categorias{
+            /**/
+        }
+
+            #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias{
+                /*border:1px solid red;*/
+                margin:0px auto;
+                max-width:419px;   /*Para evitar que cuando se expanda pase de 3 columnas*/
+                text-align:center;
+            }
+
+                #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias .cont_personaje{
+                    /*border:1px solid green;*/
+                    background-color:white;
+                    border-radius:7px;
+                    cursor:pointer;
+                    display:inline-block;
+                    margin:5px;
+                }
+
+                #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias .cont_personaje:hover{
+                    background-color:#0078b9;
+                }
+
+                    #seleccionCategoria_container .cont_seleccion .cont_categorias .categorias .cont_personaje .personaje{
+                        /**/
+                    }
+
+        #seleccionCategoria_container .cont_seleccion .cont_botones{
+            /**/
+            margin:30px 0px 10px 0px;
+        }
+
+            #seleccionCategoria_container .cont_seleccion .cont_botones .btn_jugar{
+                background-color:#0078b9;
+                /*border:1px solid green;*/
+                border-radius:5px;
+                color:white;
+                cursor:pointer;
+                font-weight:bold;
+                height:30px;
+                line-height:30px;
+                margin:0px auto;
+                max-width:200px;
+                min-width:40px;
+                text-align:center;
+                width:70%;
+            }
+
+            #seleccionCategoria_container .cont_seleccion .cont_botones .btn_jugar:hover{
+                background-color:rgba(0, 120, 185, 0.7);
+            }
+}
+
+
+/************************/
+/*	ESTILOS GENERALES	*/
+.hh2{
+    font-size:1.5em !important;
+    font-weight:bold !important;
+}
+
+.hh1{
+    font-size:0.8em !important;
+    font-weight:bold !important;
+}

@@ -1,0 +1,27 @@
+/* CSS Document */
+#generalHeader{
+	/*max-width:400px;*/
+	width: 100%;
+	margin:0px auto;
+	color: #fff;
+	background-color: #563d7c;
+	border-bottom: 5px solid dimgray;
+}
+
+.header_container
+{
+	display: table;
+	width: 100%;
+}
+
+.header_buttons{
+	display: table-cell;
+	align-content: right;
+	width: 20%;
+}
+
+.header_usuario{
+	display: table-cell;
+	padding-left: 10px;
+	width: 80%;
+}

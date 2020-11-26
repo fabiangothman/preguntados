@@ -1,0 +1,15 @@
+
+(function(compId){var _=null,y=true,n=false,x1='6.0.0',rz='rotateZ',x9='rgba(255,255,255,0.00)',x2='5.0.0',e10='${engranaje}',x4='rgba(0,0,0,0)',e20='${efe}',g='image',o='opacity',d='display',b='block',lf='left',zx='scaleX',x14='0px',x17='auto',e11='${engranaje2}',x16='1328px',zy='scaleY',w='width',x18='efe',x3='6.0.0.400',x15='1363px',e13='${ojos}',e12='${nombre}',i='none';var g5='nombre.png',g19='efe.png',g7='engranaje2.png',g6='engranaje.png',g8='ojos.png';var im='images/',aud='media/',vid='media/',js='js/',fonts={},opts={'gAudioPreloadPreference':'auto','gVideoPreloadPreference':'auto'},resources=[],scripts=[],symbols={"stage":{v:x1,mv:x2,b:x3,stf:w,cg:i,rI:n,cn:{dom:[{id:'nombre',t:g,r:['559px','550px','530px','82px','auto','auto'],f:[x4,im+g5,'0px','0px']},{id:'engranaje',t:g,r:['12px','24px','266px','263px','auto','auto'],o:'0',f:[x4,im+g6,'0px','0px'],tf:[[],[],[],['0.5426','0.5426']]},{id:'engranaje2',t:g,r:['177px','-6px','83px','93px','auto','auto'],o:'0',f:[x4,im+g7,'0px','0px'],tf:[[],[],[],['1.00789','1.00789']]},{id:'nombre2',t:g,r:['-120px','247px','530px','82px','auto','auto'],f:[x4,im+g5,'0px','0px']},{id:'ojos',v:i,t:g,r:['98px','87px','93px','34px','auto','auto'],f:[x4,im+g8,'0px','0px'],tf:[[],[],[],['1.00789']]}],style:{'${Stage}':{isStage:true,r:['null','null','290px','322px','auto','auto'],overflow:'hidden',f:[x9]}}},tt:{d:33850,a:y,data:[["eid147",zx,380,545,"linear",e10,'0.5426','1.00789'],["eid151",o,620,305,"linear",e11,'0','1'],["eid145",o,380,545,"linear",e10,'0','1'],["eid149",zy,380,545,"linear",e10,'0.5426','1.00789'],["eid10",lf,0,660,"easeInOutBack",e12,'559px','0px'],["eid161",d,925,0,"linear",e13,i,b],["eid160",rz,925,6585,"linear",e11,'428deg','0deg'],["eid163",rz,7510,6585,"linear",e11,'0deg','428deg'],["eid164",rz,14095,6585,"linear",e11,'428deg','0deg'],["eid166",rz,20680,6585,"linear",e11,'0deg','428deg'],["eid167",rz,27265,6585,"linear",e11,'428deg','0deg'],["eid153",zy,1015,300,"linear",e13,'1','1.41026'],["eid155",zy,1315,300,"linear",e13,'1.41026','1'],["eid156",zy,2075,300,"linear",e13,'1','1.41026'],["eid157",zy,2375,300,"linear",e13,'1.41026','1.00789'],["eid158",zy,3717,300,"linear",e13,'1.00789','1.41026'],["eid159",zy,4017,300,"linear",e13,'1.41026','1']]}},"Symbol_1":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:n,cn:{dom:[{r:[x14,x14,x15,x16,x17,x17],id:x18,t:g,f:[x4,im+g19,x14,x14]}],style:{'${symbolSelector}':{r:[_,_,x15,x16]}}},tt:{d:50750,a:y,l:{"1":0},data:[["eid1",rz,0,50750,"linear",e20,'0deg','360deg']]}}};AdobeEdge.registerCompositionDefn(compId,symbols,fonts,scripts,resources,opts);})("EDGE-281264442");
+(function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
+//Edge symbol: 'stage'
+(function(symbolName){})("stage");
+//Edge symbol end:'stage'
+
+//=========================================================
+
+//Edge symbol: 'Symbol_1'
+(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",50750,function(sym,e){sym.play("1");});
+//Edge binding end
+})("Symbol_1");
+//Edge symbol end:'Symbol_1'
+})})(AdobeEdge.$,AdobeEdge,"EDGE-281264442");
